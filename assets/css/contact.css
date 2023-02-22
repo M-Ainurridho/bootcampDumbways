@@ -1,0 +1,115 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+   background-color: #ddd;
+   color: #333;
+   position: relative;
+}
+
+/* Navbar */
+nav {
+   font-size: 1.3rem;
+   background-color: #eee;
+   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+   display: flex;
+   padding: 0 2em;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+}
+
+.nav-left {
+   display: flex;
+   align-items: center;
+}
+
+.brand img {
+   width: 100px;
+   height: 70px;
+}
+
+.nav-left ul {
+   list-style: none;
+}
+
+.nav-left li {
+   display: inline-block;
+   margin-left: 25px;
+}
+
+.nav-left li a {
+   color: #333;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+.nav-left li a:hover {
+   color: rgb(81, 81, 255);
+}
+
+.nav-right a {
+   padding: 5px 20px;
+   background-color: #333;
+   color: white;
+   border-radius: 8px;
+   text-decoration: none;
+}
+
+.nav-right a:hover {
+   color: rgb(81, 81, 255);
+}
+
+/* Form */
+main {
+   margin: 120px auto;
+   width: 45%;
+   /* background-color: white; */
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main h1 {
+   text-align: center;
+}
+
+form {
+   margin-top: 50px;
+   font-size: 17px;
+}
+
+label,
+button {
+   font-weight: bold;
+}
+
+input,
+select,
+textarea {
+   padding: 10px;
+   width: 100%;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+   margin: 5px 0 20px;
+   font-size: 17px;
+}
+
+textarea {
+   resize: vertical;
+}
+
+button {
+   border: none;
+   padding: 10px 30px;
+   background-color: #333;
+   color: white;
+   border-radius: 20px;
+   cursor: pointer;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="assets/css/contact.css" />
+      <title>Contact Form</title>
+   </head>
+   <body>
+      <!-- Awal avbar -->
+      <nav>
+         <div class="nav-left">
+            <div class="brand">
+               <img src="assets/img/brand.png" alt="Logo R" />
+            </div>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="">Project</a></li>
+               <li><a href="">About</a></li>
+            </ul>
+         </div>
+         <div class="nav-right">
+            <a href="contact.html">Contact Me</a>
+         </div>
+      </nav>
+      <!-- Akhir Navbar -->
+
+      <main>
+         <h1>Contact</h1>
+         <!-- Awal Form -->
+         <form>
+            <label for="name">Name</label> <br />
+            <input type="text" id="name" />
+
+            <label for="email">Email</label> <br />
+            <input type="email" id="email" />
+
+            <label for="telp">Phone Number</label> <br />
+            <input type="tel" id="telp" />
+
+            <label for="subject">Subject</label> <br />
+            <select id="subject">
+               <option>----- Choose Option -----</option>
+               <option>Collaboration</option>
+               <option>Experience</option>
+               <option>Hiring</option>
+            </select>
+
+            <label for="message">Your Message</label> <br />
+            <textarea id="message" rows="10"></textarea>
+
+            <button type="submit">Submit</button>
+         </form>
+         <!-- Akhir Form -->
+      </main>
+   </body>
+</html>
