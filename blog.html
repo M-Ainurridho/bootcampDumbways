@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Font Awesome 6 -->
+      <script src="https://kit.fontawesome.com/c92e202055.js" crossorigin="anonymous"></script>
+      <!-- CSS Style -->
+      <link rel="stylesheet" href="assets/css/blog.css" />
+      <title>My Project</title>
+   </head>
+   <body>
+      <!-- Awal Navbar -->
+      <nav>
+         <div class="nav-left">
+            <div class="brand">
+               <img src="assets/img/brand.png" alt="Logo R" />
+            </div>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="#" class="active">MyProject</a></li>
+            </ul>
+         </div>
+         <div class="nav-right">
+            <a href="contact.html">Contact Me</a>
+         </div>
+      </nav>
+      <!-- Akhir Navbar -->
+
+      <!-- Create New Project -->
+      <section id="addProject" class="add-project">
+         <h1>Add My Project</h1>
+         <form>
+            <div>
+               <label for="inputProjectName">Project Name</label> <br />
+               <input type="text" id="inputProjectName" placeholder="Add new project name..." autocomplete="off" required />
+            </div>
+
+            <div class="date">
+               <div class="start-date">
+                  <label for="inputStartDate">Start Date</label><br />
+                  <input type="date" id="inputStartDate" required />
+               </div>
+               <div class="end-date">
+                  <label for="inputEndDate">End Date</label> <br />
+                  <input type="date" id="inputEndDate" required />
+               </div>
+            </div>
+
+            <div>
+               <label for="inputDescription">Description</label> <br />
+               <textarea id="inputDescription" placeholder="Add description of your content..." rows="8" required></textarea>
+            </div>
+
+            <div>
+               <p>Technologies :</p>
+               <div class="skills">
+                  <div>
+                     <input type="checkbox" name="nodejs" id="nodejs" />
+                     <label for="nodejs">Node Js</label> <br />
+
+                     <input type="checkbox" name="reactjs" id="reactjs" />
+                     <label for="reactjs">React Js</label> <br />
+                  </div>
+                  <div>
+                     <input type="checkbox" name="vuejs" id="vuejs" />
+                     <label for="vuejs">Vue Js</label> <br />
+
+                     <input type="checkbox" name="laravel" id="laravel" />
+                     <label for="laravel">Laravel</label> <br />
+                  </div>
+               </div>
+            </div>
+
+            <div class="upload">
+               <label for="uploadImg">Upload Image</label> <br />
+               <input type="file" id="uploadImg" required />
+            </div>
+
+            <button class="button">Submit</button>
+         </form>
+      </section>
+      <!-- End Create New Project -->
+
+      <!-- My Project -->
+      <section id="myProject" class="my-project">
+         <h1>my project</h1>
+         <div class="container"></div>
+      </section>
+      <!-- End My Project -->
+
+      <script src="assets/js/blog.js"></script>
+      <!-- <script src="assets/js/testimoni.js"></script> -->
+   </body>
+</html>
