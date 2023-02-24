@@ -1,0 +1,241 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+   color: #333;
+   position: relative;
+}
+
+/* Navbar */
+nav {
+   font-size: 1.3rem;
+   background-color: #eee;
+   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+   display: flex;
+   padding: 0 2em;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   z-index: 9999;
+}
+
+.nav-left {
+   display: flex;
+   align-items: center;
+}
+
+.brand img {
+   width: 100px;
+   height: 70px;
+}
+
+.nav-left ul {
+   list-style: none;
+}
+
+.nav-left li {
+   display: inline-block;
+   margin-left: 25px;
+}
+
+.nav-left li a {
+   color: #333;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+.nav-left li a:hover {
+   color: rgb(81, 81, 255);
+}
+
+.nav-right a {
+   padding: 5px 20px;
+   background-color: #333;
+   color: white;
+   border-radius: 8px;
+   text-decoration: none;
+}
+
+.nav-right a:hover {
+   color: rgb(81, 81, 255);
+}
+
+.active {
+   font-weight: bold;
+}
+
+/* ADD NEW PROJECT */
+.add-project {
+   margin-top: 60px;
+   background-color: #ddd;
+   padding: 80px;
+   font-size: 1.5rem;
+}
+
+.add-project h1,
+.my-project h1 {
+   text-align: center;
+   font-size: 1.8em;
+   text-transform: uppercase;
+}
+
+form {
+   font-size: 0.8em;
+   max-width: 650px;
+   margin: 50px auto 0;
+   overflow: auto;
+}
+
+form div {
+   width: 100%;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="file"],
+textarea {
+   padding: 12px;
+   border: 1px solid #bbb;
+   border-radius: 5px;
+   width: 100%;
+   margin: 3px 0 20px;
+   box-shadow: 0 3px 5px rgba(134, 134, 134, 0.5);
+}
+
+.date {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 10px;
+}
+
+.skills {
+   display: flex;
+   flex-basis: 50%;
+   width: 50%;
+   margin-top: 10px;
+}
+
+.skills label {
+   margin: 5px 0;
+   display: inline-block;
+   color: #555;
+}
+
+.skills input {
+   box-shadow: 0 3px 5px rgba(134, 134, 134, 0.5);
+   border: 1px solid white;
+   padding: 10px;
+}
+
+.upload {
+   position: relative;
+   margin: 20px 0 0;
+}
+
+.upload input {
+   background-color: white;
+   /* color: white; */
+   position: relative;
+   margin-top: 3px;
+   text-indent: 34px;
+}
+
+.upload input::before {
+   content: "Choose File";
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   text-indent: 0;
+   top: -1px;
+   bottom: 0;
+   left: 0;
+   width: 100px;
+   background-color: #ddd;
+   border: 1px solid #bbb;
+   border-radius: 5px;
+   color: #888;
+   font-size: 16px;
+   padding: 5px;
+}
+
+button {
+   border: none;
+   padding: 10px 40px;
+   background-color: #333;
+   color: white;
+   border-radius: 20px;
+   cursor: pointer;
+   float: right;
+   margin-top: 15px;
+   font-weight: bold;
+}
+
+/* MY PROJECT */
+.my-project {
+   padding: 80px;
+   font-size: 1.5rem;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 50px;
+   margin-top: 50px;
+}
+
+.card {
+   /* background-color: red; */
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-heading img {
+   width: 100%;
+   border-radius: 5px;
+}
+
+.deadline {
+   font-size: 15px;
+   color: #888;
+}
+
+.card-body {
+   margin-top: 15px;
+}
+
+.description {
+   font-size: 16px;
+   text-align: justify;
+}
+
+.icon-skills i {
+   margin: 18px 5px;
+}
+
+.btn-change {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+
+.btn-change a {
+   flex: 1;
+   text-align: center;
+   text-decoration: none;
+   color: white;
+   background-color: #333;
+   font-size: 18px;
+   padding: 5px;
+   border-radius: 5px;
+   width: 100px;
+}
